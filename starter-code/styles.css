@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+/*=================
+  Table of Contents
+  1. Global Variables
+  2. Layout
+  3. Components
+  4. Typography
+  5. Media Queries
+  =================*/
+
+/*==========
+1.Global Variable
+============*/
+
+:root{
+    /* color pallet */
+    --greenText: #54E6AF;
+    --darkBlueText:#2C344B;
+    --middleBlueText: #5A668A;
+    --lightBlueText: #C2CBE5;
+    --blackText: #121725;
+    --whiteText: #FFFFFF;
+
+    /* Typography */
+    --fontTight: 'Chivo', sans-serif;
+    /* Title */
+    --fontSizeTitle: 52px;
+    --fontLineTitle: 62px line;
+    --upperCase: uppercase;
+    /* Body */
+    --fontSizeBody: 52px;
+    --fontLineBody: 62px line;
+
+}
+
+/*==========
+2. Layout
+============*/
+
+body{
+    font-family: var(--fontTight);
+    margin: 0;
+}
+
+.main-columnLayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.top-row{
+    background-color: DodgerBlue;
+    color: white;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.bottom-row{
+    display: flex;
+    background-color: #f1f1f1;
+    justify-content: center;
+}
+
+.bottom-row > div{
+  background-color: DodgerBlue;
+  color: white;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+}
+
+/*==========
+3.Components
+============*/
+
+
+/*==========
+4.Typography
+============*/
+
+/*==========
+  5.Media Queries
+============*/
