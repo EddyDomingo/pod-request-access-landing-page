@@ -52,9 +52,10 @@ body{
 }
 
 .top-row{
+    display: flex;
     background-color: var(--blackText);
     width: 100%;
-    margin: 5px;
+    margin: 0px;
     text-align: center;
     height: 15vh;
 }
@@ -62,12 +63,12 @@ body{
 .bottom-row{
     display: flex;
     flex-direction: row;
-    background-color: #f1f1f1;
+    background-color: var(--blackText);
     justify-content: center;
 }
 
 .bottom-row > div{
-  background-color: DodgerBlue;
+  background-color: var(--blackText);
   color: white;
   width: 50%;
   margin: 5px;
@@ -117,27 +118,7 @@ body{
   display: inline-block;
 }
 
-input{
-  margin-top: 20px;
-  border-radius: 25px;
-  border: none;
-  background-color: var(--middleBlueText);
-  margin-left: 140px;
-  height: 40px;
-  width: 385px;
-}
-input:focus{
-  outline: none;
-}
 
-button{
-  height: 36px;
-  width: 150px;
-  margin-left: -23%;
-  border-radius: 25px;
-  background-color: var(--greenText);
-  color: var(--whiteText);
-}
 
 
 /*==========
@@ -155,6 +136,50 @@ button{
   margin-top:-60px;
 }
 
+.logos-podcasts{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 130px;
+  justify-content: space-around;
+  margin-right: 160px;
+}
+
+.top-logo{
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 130px;
+  
+}
+
+input{
+  margin-top: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--middleBlueText);
+  margin-left: 140px;
+  height: 40px;
+  width: 385px;
+  color: var(--whiteText);
+  text-align: left;
+  
+}
+input:focus{
+  outline: none;
+}
+
+button{
+  height: 36px;
+  width: 150px;
+  margin-left: -23%;
+  border-radius: 25px;
+  background-color: var(--greenText);
+  color: var(--blackText);
+  
+}
+
+button:hover{
+  background-color: var(--darkBlueText);
+}
 
 /*==========
 4.Typography
@@ -177,10 +202,33 @@ button{
 
 ::placeholder {
     color: var( --whiteText );
-    text-align: center;
+    text-align: left;
+    margin-left: 40px;
+    
    
 }
 
 /*==========
   5.Media Queries
 ============*/
+
+/* moblile */
+@media screen and (max-width: 480px){
+  body{
+    background-image: url("./assets/mobile/image-host.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+
+  .text-container{
+    opacity: 0.6;
+  }
+
+}
+
+/*Tablet*/
+@media all and (max-width: 768){
+
+}
