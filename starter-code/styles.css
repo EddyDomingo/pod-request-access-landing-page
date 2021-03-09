@@ -41,26 +41,27 @@
 body{
     font-family: var(--fontTight);
     margin: 0;
+    
 }
 
 .main-columnLayout{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f1f1f1;
+    background-color: var(--blackText);
 }
 
 .top-row{
-    background-color: DodgerBlue;
-    color: white;
+    background-color: var(--blackText);
     width: 100%;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
-    line-height: 75px;
+    height: 15vh;
 }
 
 .bottom-row{
     display: flex;
+    flex-direction: row;
     background-color: #f1f1f1;
     justify-content: center;
 }
@@ -69,19 +70,116 @@ body{
   background-color: DodgerBlue;
   color: white;
   width: 50%;
-  margin: 10px;
+  margin: 5px;
   text-align: center;
-  line-height: 75px;
+  height: 75vh; /*line-height: typography;*/
 }
+
+.bottom-row div:nth-child(2){
+  flex-basis: 1200px;
+}
+
+.footer-row{
+  background-color: var(--blackText);
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  height: 10vh;
+}
+
+.text-container{
+  text-align: left;
+  margin-top: 160px;
+  line-height:0.2;
+  width: 850px;
+  height: 645px;
+  background-color: var(--blackText);
+  position: absolute;
+  z-index: 1;
+}
+
+.text-container > div{
+  margin-top: 200px;
+
+}
+
+.word-wrap{
+  width: 400px;
+  margin-left: 140px;
+}
+
+#text-wordwrap{
+  line-height:normal;
+  
+}
+
+.input-button-wrapper{
+  display: inline-block;
+}
+
+input{
+  margin-top: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--middleBlueText);
+  margin-left: 140px;
+  height: 40px;
+  width: 385px;
+}
+input:focus{
+  outline: none;
+}
+
+button{
+  height: 36px;
+  width: 150px;
+  margin-left: -23%;
+  border-radius: 25px;
+  background-color: var(--greenText);
+  color: var(--whiteText);
+}
+
 
 /*==========
 3.Components
 ============*/
 
+.host-img{
+  position: relative;
+  
+}
+
+.pattern-img{
+  position: relative;
+  margin-left: 645px;
+  margin-top:-60px;
+}
+
 
 /*==========
 4.Typography
 ============*/
+
+.publish-text{
+  color: var(--greenText);
+  font-size: var(--fontSizeTitle);
+  text-transform: uppercase;
+  margin-left: 140px;
+  
+}
+.everywhere-text{
+  color: var(--whiteText);
+  font-size: var(--fontSizeTitle);
+  text-transform: uppercase;
+  margin-left: 140px;
+  
+}
+
+::placeholder {
+    color: var( --whiteText );
+    text-align: center;
+   
+}
 
 /*==========
   5.Media Queries
